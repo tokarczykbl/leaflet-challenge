@@ -49,7 +49,7 @@ function createFeatures(earthquakeData) {
             radius: markerSize(magnitude)
         }).addTo(myMap);
 
-        circle.bindPopup(`<h3>Location: ${location}</h3><hr><h3>Significance: ${sig}</h3><hr><h3>Magnitude: ${magnitude}</h3><hr><h3>Time: ${new Date(time)}</h3><hr><h3># of Reports: ${felt}</h3>`);
+        circle.bindPopup(`<b>Location:</b> ${location}<hr><b>Significance:</b> ${sig}<hr><b>Magnitude:</b> ${magnitude}<hr><b>Time:</b> ${new Date(time)}<hr><b># of Reports:</b> ${felt}`);
     }
 }
 
