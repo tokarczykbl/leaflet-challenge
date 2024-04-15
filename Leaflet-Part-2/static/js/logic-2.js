@@ -93,6 +93,8 @@ function createMap(earthquakes) {
 
     let legend = L.control({position: 'bottomright'});
 
+
+// Add legend to map (https://leafletjs.com/examples/choropleth/)
 legend.onAdd = function (myMap) {
 
     var div = L.DomUtil.create('div', 'info legend'),
@@ -110,4 +112,3 @@ legend.onAdd = function (myMap) {
 legend.addTo(myMap);
 }
 
-// Add legend to map (https://leafletjs.com/examples/choropleth/)
