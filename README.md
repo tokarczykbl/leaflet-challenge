@@ -17,3 +17,5 @@ By naivagting the map and using the tool tips you see more detailed information 
 
 1. Navigate to https://tokarczykbl.github.io/leaflet-challenge/.
 2. Search the map, click on a marker and use the tool tip to reveal more information.
+
+![Screenshot](https://github.com/tokarczykbl/leaflet-challenge/tree/main/static/images/Screenshot.png)
