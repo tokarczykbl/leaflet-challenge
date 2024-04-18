@@ -49,7 +49,7 @@ function createFeatures(earthquakeData) {
             radius: markerSize(magnitude)
         }).addTo(myMap);
 
-        circle.bindPopup(`<b>Location:</b> ${location}<hr><b>Significance:</b> ${sig}<hr><b>Magnitude:</b> ${magnitude}<hr><b>Time:</b> ${new Date(time)}<hr><b># of Reports:</b> ${felt}`);
+        circle.bindPopup(`<b>Location:</b> ${location}<hr><b>Significance:</b> ${sig}<hr><b>Magnitude:</b> ${magnitude}<hr><b>Depth:</b> ${coordinates[2]}<hr><b>Time:</b> ${new Date(time)}<hr><b># of Reports:</b> ${felt}`);
     }
 }
 
@@ -61,6 +61,8 @@ legend.onAdd = function (myMap) {
     var div = L.DomUtil.create('div', 'info legend'),
         grades = [-10, 10, 30, 50, 70, 90],
         labels = [];
+
+    div.innerHTML += '<h1 style="text-align: center;">Depth</h1>';;
 
     // loop through our depth intervals and generate a label with a colored square for each interval 
     for (var i = 0; i < grades.length; i++) {
